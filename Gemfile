@@ -32,3 +32,14 @@ group :development do
   gem 'better_errors'
   gem 'erb2haml'
 end
+
+group :test do
+  gem 'guard-rspec', require: false
+  gem 'terminal-notifier-guard'
+  gem 'shoulda-matchers', require: false
+  gem 'factory_girl_rails', '~> 4.0'
+  gem 'capybara'
+  gem 'capybara-screenshot'
+  gem 'poltergeist'
+  gem 'database_cleaner'
+end
