@@ -30,4 +30,5 @@ end
 group :development do
   gem 'frontend-guidelines', git: 'git@github.com:zweitag/frontend_guidelines.git'
   gem 'better_errors'
+  gem 'erb2haml'
 end
