@@ -8,6 +8,12 @@ Bundler.require(*Rails.groups)
 
 module Feats
   class Application < Rails::Application
+     # Autload from /lib
+     config.autoload_paths += %W(#{config.root}/lib)
+
+     # Include assets managed by bower
+     config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

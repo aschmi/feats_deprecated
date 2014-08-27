@@ -1,0 +1,20 @@
+{
+  "name": "feats",
+  "version": "0.0.0",
+  "homepage": "https://github.com/zweitag/feats",
+  "authors": [
+    "Zweitag GmbH"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.16"
+  }
+}

@@ -3,15 +3,16 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.1'
 gem 'rails-i18n', '~> 4.0.0'
 gem 'pg'
-gem 'sass-rails', '~> 4.0.3'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
 
 # Frontend
 gem "compass-rails", group: :assets
 gem "crispy-grid", group: :assets
 gem "haml"
 gem "glow"
+gem 'uglifier', '>= 1.3.0'
+gem 'sass-rails', '~> 4.0.3'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'angularjs-rails'
 
 gem 'jquery-rails'
 gem 'turbolinks'
@@ -28,6 +29,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'zweitag_angular_setup', git: 'git@github.com:zweitag/zweitag_angular_setup.git'
   gem 'frontend-guidelines', git: 'git@github.com:zweitag/frontend_guidelines.git'
   gem 'better_errors'
   gem 'erb2haml'
@@ -43,3 +45,4 @@ group :test do
   gem 'poltergeist'
   gem 'database_cleaner'
 end
+gem "ngannotate-rails"

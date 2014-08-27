@@ -27,3 +27,6 @@
 // App Unique Element Imports
 //---------------------------
 //= require unique-elements/layouts/application
+
+//= require angular/angular
+//= require angular/app
