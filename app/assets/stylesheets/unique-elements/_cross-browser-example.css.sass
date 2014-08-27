@@ -1,0 +1,18 @@
+// Example for cross browser switches
+// Read about browser-specific style organization in the Frontend Guidelines wiki:
+// https://github.com/zweitag/Frontend-Guidelines/wiki/Browser-Specific-Stylesheet-Organization
+// Please work with our Cross Browser Guide when optimizing for browsers/platforms:
+// https://github.com/zweitag/Frontend-Guidelines/wiki/Cross-Browser-Guide
+  #main-navigation
+    // inline ternary if-function
+    margin-bottom: if($ie7, 13px, 10px)
+    // @if directive for excluding unsupported styles for browser-specific stylesheets
+    @if not ($ie7 or $ie8)
+      +border-top-radius(5px)
+  #main-navigation--flyout-menu
+    background-color: $background-color
+    // @if / @else directives for legacy-browser / default behavior
+    @if $ie7 or $ie
+      border: 1px solid $grey
+    @else
+      +single-box-shadow($light-grey, -1px, 1px, 3px)

@@ -1,0 +1,25 @@
+#app-header
+  width: 100%
+  background-color: $area-accent-color
+
+#app-header--content
+  +grid-container
+  min-height: 50px
+
+#app-header--flash-message
+  position: absolute
+  z-index: 1
+  width: 100%
+  padding:
+    top: 15px
+    bottom: 15px
+  color: $inverted-font-color
+  &.error
+    background-color: $error-color
+  &.success
+    background-color: $success-color
+  &.notice
+    background-color: $notice-color
+
+#app-header--logo
+  // ...

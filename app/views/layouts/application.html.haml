@@ -1,0 +1,14 @@
+!!!
+%html{lang: 'de'}
+  %head
+    = render partial: 'layouts/head'
+
+  %body
+    %header#app-header
+      #app-header--content
+        = link_to root_path, id: 'app-header--logo' do
+          =# image_tag 'app-logo.png'
+
+    = yield
+
+    %footer#app-footer

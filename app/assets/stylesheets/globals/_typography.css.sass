@@ -1,0 +1,57 @@
+// General Sizes, Paddings and Margins
+//------------------------------------
+$standard-margin-bottom: 20px
+@mixin standard-margin-bottom
+  margin-bottom: $standard-margin-bottom
+
+$standard-font-size: 14px
+@mixin standard-font-size
+  font-size: $standard-font-size
+
+// Fonts
+//------
+@mixin sans-serif-font
+  font-family: 'my-typekit-sans-serif-font', sans-serif
+
+@mixin serif-font
+  font-family: 'my-typekit-serif-font', serif
+
+// Base Styles
+//------------
+// Please be cautious. Do not start a specificity war by defining too much base styles.
+body
+  +sans-serif-font
+  color: $font-color
+
+p
+  line-height: 1.6
+  margin-bottom: 10px
+
+strong
+  font-weight: bold
+
+// Interactions
+//-------------
+a
+  color: inherit
+  &:link, &:visited, &:focus
+    text-decoration: none
+  &:hover img
+    +opacity(0.8)
+  &.action
+    color: $accent-color
+    text-decoration: underline
+    &:hover
+      color: $hot-spot-color
+  &.obtrusive
+    color: $accent-color
+    &:hover
+      text-decoration: underline
+  &.unobtrusive
+    color: $font-color
+    &:hover
+      color: $accent-color
+  &.silent
+    color: $silent-font-color
+    &:hover
+      color: $font-color

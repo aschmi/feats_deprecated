@@ -1,0 +1,19 @@
+%title= page_title
+- if page_meta_description.present?
+  %meta{content: page_meta_description, name: 'description'}
+
+%meta{charset: 'utf-8'}
+%meta{content: 'width=device-width, initial-scale=1.0, maximum-scale=1', name: 'viewport'}
+-# Always force latest IE rendaring engine (even in intranet) & Chrome Frame
+%meta{content: 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible'}
+= csrf_meta_tags
+
+= stylesheet_link_tag 'application', media: 'screen, projection'
+
+= javascript_include_tag 'application'
+
+-# TODO: Add favicon
+=# favicon_link_tag image_path('favicon.ico'), rel: 'shortcut icon'
+=# favicon_link_tag image_path('favicon-144.png'), rel: 'apple-touch-icon', type: 'image/png'
+
+= yield :head
