@@ -13,7 +13,7 @@ default: &default
 development:
   <<: *default
   database: feats_development
-  username: adrian.schmidt
+  username: adrianschmidt
   password:
 
 # Warning: The database defined as "test" will be erased and
@@ -22,7 +22,7 @@ development:
 test:
   <<: *default
   database: feats_test
-  username: adrian.schmidt
+  username: adrianschmidt
   password:
 
 production:
