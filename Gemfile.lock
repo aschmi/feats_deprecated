@@ -55,6 +55,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.3.6)
+    angularjs-rails (1.2.18)
     arel (5.0.1.20140414130214)
     awesome_print (1.2.0)
     better_errors (1.1.0)
@@ -252,6 +253,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  angularjs-rails
   awesome_print
   better_errors
   capybara
