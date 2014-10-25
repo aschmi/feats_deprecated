@@ -16,3 +16,6 @@
 /tmp
 
 .keep
+
+/frontend/node_modules/*
+/frontend/vendor/bower/*
